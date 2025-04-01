@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styleshit.css" />
+</head>
+<body>
+  <header>
+    <h1>Formulaire de Contact</h1>
+        <nav>
+            <a href="index.html"> Retour au site principal</a>
+        </nav>
+  </header>
+
+  <section class="contact-form">
+    <h2>Contactez-moi</h2>
+    <form action="#" method="post">
+      <label for="pseudo">Pseudo *</label>
+      <input type="text" id="pseudo" name="pseudo" required>
+
+      <label for="password">Mot de passe *</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="objet">Objet du message *</label>
+      <select id="objet" name="objet" required>
+        <option value="question">J’ai une question</option>
+        <option value="suggestion">Je fais une suggestion</option>
+        <option value="probleme">Je rencontre un problème</option>
+        <option value="autre">Autre</option>
+      </select>
+
+      <label for="message">Votre message *</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <p>Niveau d’urgence *</p>
+      <label><input type="radio" name="urgence" value="lent" checked> Lent</label>
+      <label><input type="radio" name="urgence" value="moyen"> Moyen</label>
+      <label><input type="radio" name="urgence" value="urgent"> Urgent</label>
+
+      <label class="checkbox-container">
+        <input type="checkbox" name="confidentialite" required>
+        J’accepte la politique de confidentialité *
+      </label>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>©2025 MRZG</p>
+  </footer>
+</body>
+</html>
